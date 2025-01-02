@@ -1,39 +1,49 @@
-body{
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #f6f9fd;
-    }
-    .container-gambar{
-        max-width: 100vw;
-        max-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+*{
+    margin: 0;
+    padding: 0;
+}
 
-    }
-    img{
-        max-height: 90vh;
-        margin: 5px;
-    }
-    .prev, .next{
-        padding-right: 10px;
-        padding-left: 10px;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        color: black;
-        cursor: pointer;
-    }
-    p{
-        color: black;
-    }
-    #halamanAktif{
-        text-align: center;
-    }
-    @media only screen and (max-width: 600px) {
-        img{
-            max-height: 70vh;
-        }
-    }
+body{
+    background-color: #f6f9fd;
+    display: flex;
+    justify-content: center;
+}
+
+.beranda{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.judul{
+    margin: 5vw;
+    width: 40vw;
+    background-color: tomato;
+}
+
+.judul h1{
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-size: 50pt;
+    line-height: 60pt;
+    color: #04565c;
+}
+
+.judul p{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 17pt;
+    color: black;
+}
+
+.logo{
+    margin: 5vw;
+    background-color: tomato;
+}
+
+.logo img{
+    width: 25vw;
+}

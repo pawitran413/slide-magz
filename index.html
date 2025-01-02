@@ -5,49 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
+
 <body>
-    <div class="container-gambar">
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-
-        <img src="page1.jpg" class="gambar">
-        <img src="page2.jpg" class="gambar">
-        <img src="page3.jpg" class="gambar">
-        <img src="page4.jpg" class="gambar">
-
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
+    <div class="beranda">
+        <div class="judul">
+            <h1>Himpunan Mahasiswa Teknik Elektro</h1>
+            <p>Website resmi Himpunan Mahasiswa Teknik Elektro Universitas Jenderal Soedirman</p>
+        </div>
+        <div class="logo">
+            <img src="img/Logo-03.png" alt="">
+        </div>
     </div>
-
-    <div id="halamanAktif"></div>
-
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("gambar");
-            
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            
-            slides[slideIndex-1].style.display = "block";
-
-            document.getElementById("halamanAktif").innerHTML = `<p>${slideIndex} / ${slides.length}</p>`;
-        }
-    </script>
 </body>
 </html>
