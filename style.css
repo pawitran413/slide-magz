@@ -7,21 +7,22 @@ body{
     background-color: #f6f9fd;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .beranda{
     display: flex;
-    flex-wrap: wrap;
     gap: 5px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     min-height: 100vh;
 }
 
 .judul{
     margin: 5vw;
-    width: 40vw;
-    background-color: tomato;
+    max-width: 546.4px;
+    /* background-color: tomato; */
 }
 
 .judul h1{
@@ -41,9 +42,15 @@ body{
 
 .logo{
     margin: 5vw;
-    background-color: tomato;
+    width: fit-content;
+    /* background-color: tomato; */
 }
 
 .logo img{
-    width: 25vw;
+    max-width: 341.5px;
+}
+
+.halaman-emagz{
+    margin: 10px;
+    text-align: center;
 }
