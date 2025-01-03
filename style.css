@@ -45,13 +45,17 @@ body{
     font-size: 16px;
 }
 
+.navbar .garis-tiga{
+    display: none;
+}
+
 .beranda{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 84px;
-    height: 85vh;
+    min-height: 90vh;
 }
 
 .judul{
@@ -67,7 +71,6 @@ body{
     font-size: 3.1em;
     line-height: 1.4;
     color: #04565c;
-    /* background-color: tomato; */
 }
 
 .judul p{
@@ -83,7 +86,6 @@ body{
 .logo{
     /* margin: 5vw; */
     width: fit-content;
-    /* background-color: tomato; */
 }
 
 .logo img{
@@ -93,4 +95,81 @@ body{
 .halaman-emagz{
     margin: 10px;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 190px;
+        height: 10vh;
+        background-color: tomato;
+    }
+    
+    .navbar .logo-hmte{
+        display: flex;
+        align-items: center;
+        gap: 13.7px;
+        font-family: "Montserrat", serif;
+        font-weight: 300;
+        font-size: 10px;
+    }
+    
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar .garis-tiga{
+        display: block;
+        width: 20px;
+    }
+
+    .logo-hmte img{
+        height: 35px;
+    }
+
+    /* BERANDA */
+    .beranda{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+    
+    .judul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .judul h1{
+        max-width: 100vw;
+        font-family: "Montserrat", serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.4;
+        color: #04565c;
+    }
+    
+    .judul p{
+        max-width: 250px;
+        font-family: "Montserrat", serif;
+        font-weight: 500;
+        font-size: 10.2px;
+        line-height: 1.47;
+        color: #04565c;
+    }
+
+    .logo{
+        width: fit-content;
+    }
+    
+    .logo img{
+        max-width: 250px;
+    }
 }
