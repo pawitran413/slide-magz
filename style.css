@@ -25,7 +25,9 @@ body{
 }
 
 .judul{
-    /* margin: 5vw; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .judul h1{
@@ -33,7 +35,7 @@ body{
     font-family: "Montserrat", serif;
     font-weight: 700;
     font-size: 3.1em;
-    line-height: 60pt;
+    line-height: 1.4;
     color: #04565c;
     /* background-color: tomato; */
 }
@@ -43,8 +45,8 @@ body{
     font-family: "Montserrat", serif;
     font-weight: 500;
     font-size: 1.05em;
-    line-height: 25pt;
-    color: black;
+    line-height: 1.47;
+    color: #04565c;
     /* background-color: tomato; */
 }
 
@@ -55,7 +57,7 @@ body{
 }
 
 .logo img{
-    max-width: 450px;
+    max-width: 350px;
 }
 
 .halaman-emagz{
