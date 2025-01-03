@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    font-size: 100%;
+}
+
 body{
     background-color: #f6f9fd;
     display: flex;
@@ -16,28 +20,29 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 84px;
     min-height: 100vh;
 }
 
 .judul{
     /* margin: 5vw; */
-    max-width: 600px;
 }
 
 .judul h1{
+    max-width: 580px;
     font-family: "Montserrat", serif;
     font-weight: 700;
-    font-size: 4.167em;
+    font-size: 3.1em;
     line-height: 60pt;
     color: #04565c;
     /* background-color: tomato; */
 }
 
 .judul p{
+    max-width: 446px;
     font-family: "Montserrat", serif;
     font-weight: 500;
-    font-size: 1.417em;
+    font-size: 1.05em;
     line-height: 25pt;
     color: black;
     /* background-color: tomato; */
