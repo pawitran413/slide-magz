@@ -16,38 +16,41 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 50px;
     min-height: 100vh;
 }
 
 .judul{
-    margin: 5vw;
-    max-width: 546.4px;
-    /* background-color: tomato; */
+    /* margin: 5vw; */
+    max-width: 600px;
 }
 
 .judul h1{
     font-family: "Montserrat", serif;
     font-weight: 700;
-    font-size: 50pt;
+    font-size: 4.167em;
     line-height: 60pt;
     color: #04565c;
+    /* background-color: tomato; */
 }
 
 .judul p{
     font-family: "Montserrat", serif;
     font-weight: 500;
-    font-size: 17pt;
+    font-size: 1.417em;
+    line-height: 25pt;
     color: black;
+    /* background-color: tomato; */
 }
 
 .logo{
-    margin: 5vw;
+    /* margin: 5vw; */
     width: fit-content;
     /* background-color: tomato; */
 }
 
 .logo img{
-    max-width: 341.5px;
+    max-width: 450px;
 }
 
 .halaman-emagz{
