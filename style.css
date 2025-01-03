@@ -10,18 +10,48 @@ html{
 body{
     background-color: #f6f9fd;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 400px;
+    height: 10vh;
+}
+
+.navbar .logo-hmte{
+    display: flex;
+    align-items: center;
+    gap: 13.7px;
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.logo-hmte img{
+    height: 50px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 46.5px;
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 .beranda{
     display: flex;
-    gap: 5px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 84px;
-    min-height: 100vh;
+    height: 85vh;
 }
 
 .judul{
